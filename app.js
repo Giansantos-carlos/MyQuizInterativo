@@ -18,10 +18,10 @@ const calculateUserScore = usersAnswers => {
         let colorAnswerCorrect = questions[index + 1].style.color
         if(isUserAnswerCorrect){
             score += 10
-            colorAnswerCorrect = "#00FF00"
+            questions[index + 1].style.color = "#00FF00"
             return
         }
-        colorAnswerCorrect = "#FF0000"
+        questions[index + 1].style.color = "#FF0000"
     })
 }
 const showFinalScore = () => {
